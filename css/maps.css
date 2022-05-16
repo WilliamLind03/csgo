@@ -1,0 +1,146 @@
+/* centers slider-image */
+#slider{
+    background-position: center;
+}
+/* Animation for image-slider */
+@keyframes slideBackground{
+    0%{
+        background-image: url(../images/maps/slider_maps.jpg);
+    }
+    22%{
+        background-image: url(../images/maps/slider_maps.jpg);
+    }
+    25%{
+        background-image: url(../images/maps/csgo_nuke_slider.jpg);
+    }
+    47%{
+        background-image: url(../images/maps/csgo_nuke_slider.jpg);
+    }
+    50%{
+        background-image: url(../images/maps/csgo_overpass_slider.jpg);
+    }
+    72%{
+        background-image: url(../images/maps/csgo_overpass_slider.jpg);
+    }
+    75%{
+        background-image: url(../images/maps/csgo_vertigo_slider.jpg);
+    }
+    97%{
+        background-image: url(../images/maps/csgo_vertigo_slider.jpg);
+    }
+    100%{
+        background-image: url(../images/maps/slider_maps.jpg);
+    }
+}
+
+
+/* Grid with all the maps */
+#map_grid{
+    width: 100%;
+    min-width: 440px;
+    margin: auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+        'no-map  mirage overpass inferno'
+        'vertigo dust2  ancient  nuke   '
+}
+
+/* Grid area names */
+#no-map{
+    grid-area: no-map;
+}
+#mirage{
+    grid-area: mirage;
+}
+#overpass{
+    grid-area: overpass;
+}
+#inferno{
+    grid-area: inferno;
+}
+#vertigo{
+    grid-area: vertigo;
+}
+#dust2{
+    grid-area: dust2;
+}
+#ancient{
+    grid-area: ancient;
+}
+#nuke{
+    grid-area: nuke;
+}
+
+
+/* Style for map grid */
+#map_grid img{
+    height: 100%;
+    width: 100%;
+}
+#map_grid a{
+    overflow: hidden;
+}
+.map_link{
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+/* Style for map info section */
+.map{
+    height: auto;
+    min-height: 850px;
+    padding-top: 50px;
+    
+}
+.map_img{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    height: 315px;
+    width: 100%;
+}
+.map_img img:first-of-type{
+    width: 62%;
+    float: left;
+    margin-bottom: 100px;
+}
+.map_img img:last-of-type{
+    width: 35%;
+    float: right;
+    margin-bottom: 100px;
+}
+
+
+@media screen and (max-width: 732px){
+    
+    /* Removes a column, adds a row, changes width */
+    #map_grid{
+        width: 90%;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+            'no-map  mirage  overpass'
+            'inferno vertigo dust2   '
+            'ancient nuke    ........'
+    }
+    
+    /* Changes image sizes */
+    .map_img{
+        padding: 0px 40px;
+        width: auto;
+        height: 1050px;
+    }
+    .map_img img:first-of-type{
+        width: 100%;
+        float: left;
+        margin-bottom: 10px;
+    }
+    .map_img img:last-of-type{
+        width: 100%;
+        float: right;
+        margin-bottom: 10px;
+    }
+}

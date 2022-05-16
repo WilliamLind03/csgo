@@ -1,0 +1,42 @@
+/* Animation for imageslider */
+@keyframes slideBackground{
+    0%{
+        background-image: url(../images/homepage/man_smoking.jpg);
+    }
+    30%{
+        background-image: url(../images/homepage/man_smoking.jpg);
+    }
+    33%{
+        background-image: url(../images/homepage/anti_terrorist.jpg);
+    }
+    63%{
+        background-image: url(../images/homepage/anti_terrorist.jpg);
+    }
+    66%{
+        background-image: url(../images/homepage/slider_image_ct.jpg);
+    }
+    96%{
+        background-image: url(../images/homepage/slider_image_ct.jpg);
+    }
+    100%{
+        background-image: url(../images/homepage/man_smoking.jpg);
+    }
+}
+
+
+#page img{
+    width: 80%;
+    display: block;
+    margin: 20px 10%;
+}
+
+/* Changes imagesize */
+@media screen and (max-width: 732px){
+    
+    #page img{
+        width: 100%;
+        display: block;
+        margin: 20px 0px;
+    } 
+    
+}

@@ -1,0 +1,115 @@
+/* centers slider-image */
+#slider{
+    background-position: center;
+}
+
+/* Animation for image-slider */
+@keyframes slideBackground{
+    0%{
+        background-image: url(../images/weapons/slider_ak-47-1.jpg);
+    }
+    18%{
+        background-image: url(../images/weapons/slider_ak-47-1.jpg);
+    }
+    20%{
+        background-image: url(../images/weapons/slider_awp.jpg);
+    }
+    38%{
+        background-image: url(../images/weapons/slider_awp.jpg);
+    }
+    40%{
+        background-image: url(../images/weapons/slider_m4a4.jpg);
+    }
+    58%{
+        background-image: url(../images/weapons/slider_m4a4.jpg);
+    }
+    60%{
+        background-image: url(../images/weapons/slider_ak-47.jpg);
+    }
+    78%{
+        background-image: url(../images/weapons/slider_ak-47.jpg);
+    }
+    80%{
+        background-image: url(../images/weapons/slider_awp-1.jpg);
+    }
+    98%{
+        background-image: url(../images/weapons/slider_awp-1.jpg);
+    }
+    100%{
+        background-image: url(../images/weapons/slider_ak-47-1.jpg);
+    }
+}
+
+/* Header for each list */
+#ct-weapons{
+    
+}
+#t-weapons{
+    
+}
+#shared-weapons{
+    
+}
+
+/* Style for weapon ul and li */
+.weapon_list{
+    list-style: none;
+    width: auto;
+    height: auto;
+    margin: 0;
+    color: white;
+    background-color: green;
+}
+.weapons{
+    position: relative;
+    height: auto;
+    float: left;
+    width: 180px;
+    height: 160px;
+    padding: 0px;
+    margin: 5px;
+    background: linear-gradient(to top, #222222 10%, #333333 100%);
+    filter: saturate(1);
+}
+.weapons:hover{
+    background: #333;
+    background-blend-mode: color;
+    border-bottom: 1px solid #ffae00;
+    margin-bottom: 4px;
+    width: 180px;
+    height: 160px;
+    color: #ffae00;
+    filter: saturate(2);
+}
+.weapons:hover > .weapon_list img{
+    padding: 0;
+    width: 180px;
+    height: 140px;
+    
+}
+.weapons img{
+    width: 140px;
+    height: 100px;
+    padding: 20px;
+    
+}
+.weapons p{
+    position: absolute;
+    bottom: 5px;
+    width: 180px;
+    margin: 0px;
+    text-align: center;
+}
+
+
+
+#page h3{
+    display: inline-block;
+    width: 100%;
+    color: white;
+    padding-top: 100px;
+}
+
+
+
+
